@@ -1,12 +1,11 @@
   /* Timer */
 
-let dedline = '2021-02-01';
+let dedline = '2021-03-01';
 
 function getTimeRemaining(endtime) {
     let t = Date.parse(endtime) - Date.parse(new Date()),
         seconds = Math.floor((t/1000) % 60),
         minutes = Math.floor((t/1000/60) % 60),
-        // hours = Math.floor(t/1000/60/60);
         hours = Math.floor((t/1000/60/60) % 24),
         day = Math.floor(t/1000/60/60/24);
 
